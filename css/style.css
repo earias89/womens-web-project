@@ -1,0 +1,68 @@
+body{
+    padding: 10px;
+    background-color: #a5a58d;
+    font-size: 125%;
+    margin: 20px 20px 0px 20px;
+  }
+  .container{
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+
+  h1{
+    line-height: normal;
+    color: purple;
+    font-size: 25pt;
+  }
+
+  h2{
+    line-height: normal;
+    color: #000000;
+    font-size: 20pt;
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    padding: 10px 0px 0px 10px
+  }
+
+  img{
+    background-color: #000000;
+    color: ivory;
+    width: 500px;
+    padding: 20px;
+    margin: 5px 10px 20px 15px;
+    border: 10px solid #00ab7b; 
+  }
+  li{
+    display: inline-block;
+  }
+  element.style{
+    grid-column: 1/ -1;
+    grid-column-start: 2/4;
+    grid-column-end: 1/-1;
+    border: #000000;
+  }
+  .active{
+    border: 2px solid #000000;
+}
+  #mainstuff{
+  position: absolute;
+  left: -10000px;
+}
+  header{
+    width: fit-content;
+   }
+  .skip{
+    position: absolute;
+    left: -1000;
+  }
+  .skip:focus{
+    position: absolute;
+    left: -1000;
+  }
+  footer{
+   width: fit-content;
+  }
