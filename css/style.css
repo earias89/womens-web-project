@@ -1,68 +1,327 @@
 body{
     padding: 10px;
-    background-color: #a5a58d;
-    font-size: 125%;
-    margin: 20px 20px 0px 20px;
+    background-color: #d0d0bf;
+    font-size: 18px;
+    margin: 20px 110px 20px 70px;
+    font-family: "Trirong", serif;
+    align-content: left;
   }
+  .womens-image{
+    background-color: #000000;
+    color: ivory;
+    width: 100%;
+    padding: 7px;
+    margin: 0px 10px 0px 10px;
+    border: 7px solid #45957e; 
+    border-radius: 5px;
+  }
+  .image{
+    background-color:#000000;
+    color: ivory;
+    width: 20%;
+    padding: 7px;
+    margin: 5px 10px 5px 10px;
+    border: 7px solid #45957e; 
+    border-radius: 5px;
+  }
+    
+  .active{
+    text-decoration-color: yellow;
+    text-decoration-line: overline;
+    text-decoration-thickness: 10px; 
+    background-color: rgb(216, 216, 205);
+    font-weight: bold;
+  }
+
+  .title{
+    color: white;
+  }
+
   .container{
-    grid-template-columns: 1fr;
     display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    flex-direction: column;
   }
+  .container div{
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: #c9c9c9; 
+  }
+
+  .intro{
+    background-image: url(../images/women_march_me.jpg);
+    background-color: #cbcbcb;
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: aliceblue;
+  }
+
+  .intro:hover {
+    filter:contrast(65%);
+  }
+
+
+  li{
+    display: inline;
+    padding: 20px 20px 20px 20px;
+    text-align: right;
+  }
+
+  .active{
+    text-decoration-color: yellow;
+    text-decoration-line: overline;
+    text-decoration-thickness: 10px; 
+    background-color: rgb(216, 216, 205);
+    font-weight: bold;
+  }
+
+   a.skip{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -400px;
+    top: -200px; 
+  }
+
+  .skip:focus{
+  top: 20px ;
+  left: 0px;
+  text-decoration-color: yellow;
+  text-decoration-line: overline;
+  text-decoration-thickness: 10px;
+  background-color: rgb(216, 216, 205);
+  color: blue;
+  font-weight: bold;
+}
+
+  /* ADD NAV // Fix errors on inspectors*/
+
+  nav{
+    padding: 10px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
+    text-align: right;
+    font-family: "Trirong", serif;
+    font-size: larger;
+  }
+  nav a:focus{
+    text-decoration-color: yellow;
+    text-decoration-line: overline;
+    text-decoration-thickness: 10px;
+    font-weight: bold;
+    }
 
 
   h1{
+    font-family: "Trirong", serif;
     line-height: normal;
-    color: purple;
-    font-size: 25pt;
+    color: rgb(54, 13, 54);
+    font-size: 28pt;
+    font-weight: bold;
+    line-height: 80px;
   }
 
   h2{
+    font-family: "Trirong", serif;
     line-height: normal;
     color: #000000;
-    font-size: 20pt;
+    font-size: 25pt;
+    line-height: 80px;
+    font-weight: bold;
+    margin: 65px 0px 0px 0px;
   }
 
+  h3{
+    font-family: "Trirong", serif;
+    line-height: normal;
+    color: #000000;
+    font-size: 15pt;
+    line-height: 80px;
+    font-weight: bold;
+  }
   p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14pt;
-    padding: 10px 0px 0px 10px
+    font-family: "Trirong", serif;
+    padding: 10px 0px 0px 10px;
+    color: black;
+    line-height: 20px;
+    margin: auto;
+    text-align: left;
+  }
+  .disclaimer{
+    width: fit-content;
+    position:relative;
+    top: 100px;
+    width: 100%;
+    color: rgb(54, 13, 54);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    font-family: "Trirong", serif;
+   }
+  footer p{
+    font-family: "Trirong", serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+  } 
+  footer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+/* TEST this code */
+  main{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    margin-top: 30px;
+  }
+  /* TEST this code */
+  div p{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    text-align: center;
+    font-size: 22px;
+  }
+  /* TEST this code to add bullet points on lists */
+   /* .ul{
+    list-style-type: circle;
+  } */
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Need to test below code */
+
+  .thanks{
+  width: fit-content;
+   position:relative;
+   top: 100px;
+   width: 100%;
+   color: rgb(54, 13, 54);
+   font-weight: bold;
+   text-align: center;
+   margin-top: -55px;
+   margin-bottom: 10px;
+   font-size: 20px;
   }
 
-  img{
-    background-color: #000000;
-    color: ivory;
-    width: 500px;
-    padding: 20px;
-    margin: 5px 10px 20px 15px;
-    border: 10px solid #00ab7b; 
-  }
-  li{
-    display: inline-block;
-  }
-  element.style{
-    grid-column: 1/ -1;
-    grid-column-start: 2/4;
-    grid-column-end: 1/-1;
-    border: #000000;
-  }
-  .active{
-    border: 2px solid #000000;
-}
-  #mainstuff{
-  position: absolute;
-  left: -10000px;
-}
-  header{
+
+  .original{
     width: fit-content;
-   }
-  .skip{
-    position: absolute;
-    left: -1000;
+    position:relative;
+    top: 100px;
+    width: 100%;
+    color: rgb(54, 13, 54);
+    font-weight: bold;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 95px;
   }
-  .skip:focus{
-    position: absolute;
-    left: -1000;
+
+
+  dl{
+    display: grid;
+    grid-template-columns: 15% 38% 38%;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin: auto;
+    border-radius: 25px;
   }
-  footer{
-   width: fit-content;
+
+  dt{
+    text-align: left;
+    font-weight: bold;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    margin-top: 50px;
   }
+  dd{
+    text-align: left;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  .person{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    text-align: left; 
+    margin-left: 22px;
+  } 
+  .about{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 7px;
+    margin-top: 15px;
+  } 
+  .abouttext{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    text-align: left; 
+    margin-bottom: 35px;
+    margin-top: -10px;
+  }
+
+  .key{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 7px;
+    margin-top: 15px;
+  } 
+  .keytext{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    text-align: left; 
+    margin-bottom: 35px;
+    margin-top: -10px;
+  } 
+ 
+
+
+  /* @media screen and (min-width: 800px){
+    nav{
+      padding-top: 35px;
+      text-align: right;
+    } 
+  
+    nav li{
+      margin-left: 5%;
+      margin-right:0;
+    }
+
+  }  */
