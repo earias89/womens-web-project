@@ -10,71 +10,105 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- connect to a Google font -->  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <!-- connect to a Font Aweseom font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- connect to a favicon -->
 
   <title>Women's Web</title>
 </head>
-
 <body>
-  <a href="#mainstuff">Skip to Main Content</a>
+  <a class="skip" href="#mainstuff">Skip to Main Content</a>
   <header>
-    <nav>
+    <nav> 
         <ul>
           <li class="active"><a href="index.html">About</a></li>
           <li><a href="literature.html">Literature</a></li>
           <li><a href="history.html">History and Politics</a></li>
           <li><a href="femdict.html">Feminist Dictionary</a></li>
+          <li>&#128075;<a href="#contact">Contact</a></li> 
         </ul>
     </nav>
     <h1> Woman's Web </h1>
+    <div class = "intro">
+    
+    </div>
   </header>
 
-  <main>
-    <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
-
-    <div>
+  <main class="container" id = "main">
+    <div class="womens-image">
+      <img src="images/women_march_pano.jpg" width="1200" alt="Image of the Ann Arbor Women's March">
+    </div>
+    
+    <div class="about-text" id = "about" tabindex="0">
       <p>
-        This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/women"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
-      </p>
-      <p>
-        This website currently contains 3 pages other than this one - click below to see a short description of each!
+        This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/wgs/undergraduates/undergraduate-courses.html"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. 
+        This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection. This website currently contains 3 pages other than this one - click below to see a short description of each!
       </p>
     </div>
     
-    <h1>Literature</h1>
-      <div>
+    
+
+    <div class="literature text" id="literature" tabindex="0">
+      <h1>Literature</h1>
         <p>
           This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
         </p>
       </div>
+
+      <div class="history text" id="history" tabindex="0">
       <h1>History / Politics</h1>
-      <div>
         <p>
           This page features bios of important women in history and women currently in Congress or otherwise politically involved.
         </p>
       </div>
-    <h1>Feminist Dictionary</h1>
-      <div>
+
+      <div class="feminist text" id="feminist" tabindex="0">
+      <h1>Feminist Dictionary</h1>
         <p>
           This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
         </p>
       </div>
+      <div id = "contact" class="contact text" tabindex="0">
+        <h1>Contact</h1>
+        <form action="action_page.php">
 
-    <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+
+    <div class="disclaimer" id="disc" tabindex="0">
       <p>
-        <span>Kelsey's DISCLAIMER:</span> I did not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
+        <span>Kelsey's Disclaimer:</span> I did not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
       </p>
     </div>
-  </main>
 
-  <footer>
-    <p class="thanks">
-      Thanks for visiting! <i></i>
-    </p>
-    <p>Orginal content created by Kelsey Toporski 2019</p>
-    <a href="#main">Back to Top</a>
-  </footer>
-  </main>
+
+ 
+</main>
+<footer>
+  <!-- <p class="thanks"> -->
+  <div class = "thanks" id="thankstext" tabindex="0">
+    Thanks for visiting! <i class="far fa-grin"> </i>
+  <p>Original content created by Kelsey Toporski 2019</p>
+  <a href="#top" class="tops">Back to Top</a>
+</div>
+</footer>
 </body>
 </html>
